@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weather Quest</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Doing the header for Weather Quest*/
+header {
+
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    height: 10%;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    
+
+}
+
+/* Doing menu on the left */
+navMenu {
+
+    float: left;
+    width: 35%;
+    height: 30%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+/* Doing the summary on the right */
+
+navSummary{
+
+    float: left;
+    width: 65%;
+    height: 30%;
+    background: /* Pick a color */;
+    padding: 15px;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+
+/* Doing the main section*/
+widgetHolder{
+
+    
+    height: 60%;
+    background: /* Pick a color */;
+    padding: 30px;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
