@@ -37,11 +37,11 @@ var A1 = document.getElementById("Answer1")
 var A2 = document.getElementById("Answer2")
 var A3 = document.getElementById("Answer3")
 var A4 = document.getElementById("Answer4")
-
-A1.addEventListener('click', functoin(){  /*   action to be perfomred */  });
-A2.addEventListener('click', functoin(){                                  });
-A3.addEventListener('click', functoin(){                                  });
-A4.addEventListener('click', functoin(){                                  });
+//event listeners for the buttons
+A1.addEventListener('click', functoin());
+A2.addEventListener('click', functoin());
+A3.addEventListener('click', functoin());
+A4.addEventListener('click', functoin());
 //
 
 
