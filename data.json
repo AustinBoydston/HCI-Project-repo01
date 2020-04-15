@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "quesiton": "What does an anemometer measure",
+        "answer1": "Wind speed",
+        "answer2": "Rainfall",
+        "answer3": "Temperature",
+        "answer4": "Humidity",
+        "correctanswer": "A"
+    },
+    {
+        "id": 2,
+        "quesiton": "The Saffir-Simpson scale is used to measure the intensity of what?",
+        "answer1": "Tornadoes",
+        "answer2": "Hurricanes",
+        "answer3": "Earthquakes",
+        "answer4": "Winter storms",
+        "correctanswer": "B"
+    },
+    {
+        "id": 3,
+        "quesiton": "Inside of a cloud, how do the air temperature and the dew point compare to one another?",
+        "answer1": "Equal",
+        "answer2": "Temperature > Dew point",
+        "answer3": "Dew point > Temperature",
+        "answer4": "No relationship",
+        "correctanswer": "A"
+    },
+    {
+        "id": 4,
+        "quesiton": "The process by which a cloud droplet first forms is",
+        "answer1": "Supercooling",
+        "answer2": "Evaporation",
+        "answer3": "Precipitation",
+        "answer4": "Condensation",
+        "correctanswer": "D"
+    },
+    {
+        "id": 5,
+        "quesiton": "Cumulus cloud is recognized by its",
+        "answer1": "Precipitation",
+        "answer2": "High winds",
+        "answer3": "Darkness",
+        "answer4": "Vertical dimension",
+        "correctanswer": "D"
+    },
+    {
+        "id": 6,
+        "quesiton": "Clouds are classified and named according to their altitude and",
+        "answer1": "Water content",
+        "answer2": "Temperature",
+        "answer3": "Shape",
+        "answer4": "Type of precip",
+        "correctanswer": "C"
+    },
+    {
+        "id": 7,
+        "quesiton": "\"Anvil head\" is a term applied to which clouds?",
+        "answer1": "Cumulonimbus",
+        "answer2": "Stratus",
+        "answer3": "High clouds",
+        "answer4": "Cirrus",
+        "correctanswer": "A"
+    },
+    {
+        "id": 8,
+        "quesiton": "Which has caused the fewest weather related deaths in the U.S.?",
+        "answer1": "Floods",
+        "answer2": "Hurricanes",
+        "answer3": "Tornadoes",
+        "answer4": "Lightning",
+        "correctanswer": "B"
+    },
+    {
+        "id": 9,
+        "quesiton": "Tornado is a small, very intense example of?",
+        "answer1": "Cyclone",
+        "answer2": "Jet stream",
+        "answer3": "Coriolis effect",
+        "answer4": "Anticyclone",
+        "correctanswer": "A"
+    },
+    {
+        "id": 10,
+        "quesiton": "Tornadoes most often move toward what direction?",
+        "answer1": "Northeast",
+        "answer2": "Northwest",
+        "answer3": "Southwest",
+        "answer4": "West",
+        "correctanswer": "A"
+    },
+    {
+        "id": 11,
+        "quesiton": "What general circulation wind belt is the place of origin for hurricanes?",
+        "answer1": "Easterlies",
+        "answer2": "Trade winds",
+        "answer3": "Westerlies",
+        "answer4": "Doldrums",
+        "correctanswer": "B"
+    },
+    {
+        "id": 12,
+        "quesiton": "Why do surface wind speeds increase toward the center of a hurricane?",
+        "answer1": "Stronger Coriolis effect",
+        "answer2": "Warmer water",
+        "answer3": "Conservation of angular momentum",
+        "answer4": "Reduced friction",
+        "correctanswer": "C"
+    },
+    {
+        "id": 13,
+        "quesiton": " What type of clouds is most common in a hurricane?",
+        "answer1": "Nimbostratus",
+        "answer2": "Stratus",
+        "answer3": "Cumulonimbus",
+        "answer4": "Cirrus",
+        "correctanswer": "C"
+    },
+    {
+        "id": 14,
+        "quesiton": "What determines Hurricane rating?",
+        "answer1": "Central pressure",
+        "answer2": "Temperature",
+        "answer3": "Rainfall amount",
+        "answer4": "Wind speed",
+        "correctanswer": "D"
+    },
+    {
+        "id": 15,
+        "quesiton": "What causes the winds of a hurricane to be so fast?",
+        "answer1": "Stronger Coriolis force",
+        "answer2": "Strong pressure gradient force",
+        "answer3": "Tidal effects",
+        "answer4": "Weaker Coriolis force",
+        "correctanswer": "B"
+    },
+    {
+        "id": 16,
+        "quesiton": "Buoyancy of a rising air parcel is greatly affected by",
+        "answer1": "Wind speed",
+        "answer2": "Absorption of solar radiation",
+        "answer3": "Heat released if water vapor condenses",
+        "answer4": "Temperature",
+        "correctanswer": "C"
+    },
+    {
+        "id": 17,
+        "quesiton": "A stable atmosphere is one in which",
+        "answer1": "Clouds are forming",
+        "answer2": "Vertical motions are resisted",
+        "answer3": "Low humidity",
+        "answer4": "High humidity",
+        "correctanswer": "B"
+    },
+    {
+        "id": 18,
+        "quesiton": "Where is the ozone layer?",
+        "answer1": "Stratosphere",
+        "answer2": "Mesosphere",
+        "answer3": "Exosphere",
+        "answer4": "Troposphere",
+        "correctanswer": "A"
+    },
+    {
+        "id": 19,
+        "quesiton": "What happens to temperature as you move up through out the atmosphere?",
+        "answer1": "Increases",
+        "answer2": "Decreases",
+        "answer3": "Stays the same",
+        "answer4": "Varies",
+        "correctanswer": "D"
+    },
+    {
+        "id": 20,
+        "quesiton": "What measures air pressure?",
+        "answer1": "Tipping bucket",
+        "answer2": "Wind vane",
+        "answer3": "Barometer",
+        "answer4": "Anemometer",
+        "correctanswer": "C"
+    },
+    {
+        "id": 21,
+        "quesiton": "An isobar is a line of constant?",
+        "answer1": "Pressure",
+        "answer2": "Temperature",
+        "answer3": "Wind",
+        "answer4": "Rain",
+        "correctanswer": "A"
+    },
+    {
+        "id": 22,
+        "quesiton": "Which of the following has the highest albedo and thus more reflected solar radiation?",
+        "answer1": "Water",
+        "answer2": "Blacktop",
+        "answer3": "Fresh snow ",
+        "answer4": "Sand",
+        "correctanswer": "A"
+    },
+    {
+        "id": 23,
+        "quesiton": "Thunder travels at the speed of sound which is nearest to?",
+        "answer1": "10 miles per hour",
+        "answer2": "5 miles per second",
+        "answer3": "1 mile every 5 seconds",
+        "answer4": "Speed of light",
+        "correctanswer": "C"
+    },
+    {
+        "id": 24,
+        "quesiton": "Primary moisture source for severe thunderstorms in the Great Plains originates from the?",
+        "answer1": "Jet stream",
+        "answer2": "Mexican plateau and Rocky Mountains",
+        "answer3": "Pacific Ocean",
+        "answer4": "Gulf of Mexico",
+        "correctanswer": "D"
+    },
+    {
+        "id": 25,
+        "quesiton": "Which of the following is a diabatic process?",
+        "answer1": "Convection",
+        "answer2": "Orographic lifting",
+        "answer3": "Radiational heating",
+        "answer4": "Conduction",
+        "correctanswer": "C"
+    },
+    {
+        "id": 26,
+        "quesiton": "When comparing the moisture content in the air between two locations it is best to use?",
+        "answer1": "Dewpoint ",
+        "answer2": "Relative humidity",
+        "answer3": "Wet bulb temperature",
+        "answer4": "Dry bulb temperature",
+        "correctanswer": "A"
+    },
+    {
+        "id": 27,
+        "quesiton": " On a NEXRAD velocity display, air moving away from the radar site will most likely be given a color of?",
+        "answer1": "White",
+        "answer2": "Green",
+        "answer3": "Red",
+        "answer4": "Blue",
+        "correctanswer": "C"
+    },
+    {
+        "id": 28,
+        "quesiton": "Which of the following temperature scales is a RATIO temperature scale?",
+        "answer1": "Fahrenheit",
+        "answer2": "Celsuis",
+        "answer3": "Kelvin",
+        "answer4": "None",
+        "correctanswer": "C"
+    },
+    {
+        "id": 29,
+        "quesiton": "Which of the following air masses is the most dense?",
+        "answer1": "Cold and moist",
+        "answer2": "Cold and dry ",
+        "answer3": "Warm and moist",
+        "answer4": "Warm and dry",
+        "correctanswer": "B"
+    },
+    {
+        "id": 30,
+        "quesiton": "Thickness values can be used to infer the strength of?",
+        "answer1": "Jet streak",
+        "answer2": "Vorticity",
+        "answer3": "Velocity",
+        "answer4": "Thermal advection",
+        "correctanswer": "D"
+    }
+]
