@@ -45,4 +45,41 @@ A4.addEventListener('click', functoin());
 //
 
 
+//Classes
+var display = new function(){
+
+    //update the canvas
+
+};
+
+var gameLogic = new function(){
+//reference json file here and cycle quesitons as well as tally the score
+
+//the score of the game
+var score = 0;
+//an array that keeps track of what questions have already been visited
+var visited = new Array(30);
+//initialize all indexes to 0 since no questions have been visited at this time
+for(var i = 0; i < 30; i++)
+{
+    visited[i] = 0;
+}
+//implement randomizing funciton that will call up a random question
+
+//for not just iterate sequencially
+
+
+};
+
+var controller = new function(){
+
+//handles actions by user
+
+};
+
+
+
+
+
+
 
