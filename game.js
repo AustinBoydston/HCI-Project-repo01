@@ -27,16 +27,13 @@ basic layout for first prototype attempt:
 
 */
 
-//The canvas we have set up in the html file is called ctx
-// this ctx variable is linked to it
-var ctx = document.getElementById("ctx").getContext("2d");
-ctx.font = '30px Arial';
+
 
 //Answer buttons from index.html linked to new javascript variables
-var A1 = document.getElementById("Answer1")
-var A2 = document.getElementById("Answer2")
-var A3 = document.getElementById("Answer3")
-var A4 = document.getElementById("Answer4")
+var A1 = document.getElementById("Answer1");
+var A2 = document.getElementById("Answer2");
+var A3 = document.getElementById("Answer3");
+var A4 = document.getElementById("Answer4");
 //event listeners for the buttons
 A1.addEventListener('click', functoin());
 A2.addEventListener('click', functoin());
@@ -77,19 +74,54 @@ var controller = new function(){
 
 };
 
-//uploads code from json file using xmlhttprequest and prints inside the canvas to test 
-var questions = new XMLHttpRequest();
-questions.open('GET', 'https://raw.githubusercontent.com/AustinBoydston/HCI-Project-repo01/master/data.json');
-questions.responseType = 'json';
-questions.send();
+function start(){
 
-questions.onload() = function(){
-    var jsonQuestions = questions.response;
+    // var questions = new XMLHttpRequest();
+    // questions.open('GET', "/data.json");
+    // questions.responseType = "json";
+    // questions.send();
+
+    // questions.onload() = function(){
+    // var jsonQuestions = questions.response;
+    // window.alert("this ran");
+    // };
+
+    var jsonSource = new XMLHttpRequest();
+    jsonSource.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var questions = JSON.parse(this.responseText);
+            document.getElementById("test").innerHTML = questions[0].quesiton;
+        }
+    };
+    jsonSource.open("GET", "data.json", true);
+    jsonSource.send();
+
+    var test1 = "changed";
+    document.getElementById("test2").innerHTML = test1;
+
+    //The canvas we have set up in the html file is called ctx
+    // this ctx variable is linked to it
+    var ctx = document.getElementById("ctx").getContext("2d");
+    var ques = document.getElementById("ctx").getContext("2d");
+    var a1 = document.getElementById("ctx").getContext("2d");
+    var a2 = document.getElementById("ctx").getContext("2d");
+    var a3 = document.getElementById("ctx").getContext("2d");
+    var a4 = document.getElementById("ctx").getContext("2d");
+
+    ctx.font = '30px Arial';
+    ques.font = '30px Arial';
+    a1.font = '20px Arial';
+    a2.font = '20px Arial';
+    a3.font = '20px Arial';
+    a4.font = '20px Arial';
+
+    ctx.fillText("Title", 250, 50);
+    ques.fillText("Question", 150, 100);
+    a1.fillText = ("A", 100, 150);
+    a2.fillText = ("B", 300, 150);
+    a3.fillText = ("C", 100, 200);
+    a4.fillText = ("D", 300, 200);
 };
-
-//testing to see if it loads proper value
-var test = 100;
-document.getElementById("test").innerHTML = test;
 
 
 
