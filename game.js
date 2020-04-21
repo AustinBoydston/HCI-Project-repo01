@@ -103,24 +103,24 @@ function start(){
     // this ctx variable is linked to it
     var ctx = document.getElementById("ctx").getContext("2d");
     var ques = document.getElementById("ctx").getContext("2d");
-    var a1 = document.getElementById("ctx").getContext("2d");
-    var a2 = document.getElementById("ctx").getContext("2d");
-    var a3 = document.getElementById("ctx").getContext("2d");
-    var a4 = document.getElementById("ctx").getContext("2d");
+    var b1 = document.getElementById("ctx").getContext("2d");
+    var b2 = document.getElementById("ctx").getContext("2d");
+    var b3 = document.getElementById("ctx").getContext("2d");
+    var b4 = document.getElementById("ctx").getContext("2d");
 
     ctx.font = '30px Arial';
     ques.font = '30px Arial';
-    a1.font = '20px Arial';
-    a2.font = '20px Arial';
-    a3.font = '20px Arial';
-    a4.font = '20px Arial';
+    b1.font = '20px Arial';
+    b2.font = '20px Arial';
+    b3.font = '20px Arial';
+    b4.font = '20px Arial';
 
     ctx.fillText("Title", 250, 50);
     ques.fillText("Question", 150, 100);
-    a1.fillText = ("A", 100, 150);
-    a2.fillText = ("B", 300, 150);
-    a3.fillText = ("C", 100, 200);
-    a4.fillText = ("D", 300, 200);
+    b1.fillText = ("A", 100, 150);
+    b2.fillText = ("B", 300, 150);
+    b3.fillText = ("C", 100, 200);
+    b4.fillText = ("D", 300, 200);
 };
 
 
