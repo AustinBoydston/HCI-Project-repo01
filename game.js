@@ -77,6 +77,20 @@ var controller = new function(){
 
 };
 
+//uploads code from json file using xmlhttprequest and prints inside the canvas to test 
+var questions = new XMLHttpRequest();
+questions.open('GET', 'https://raw.githubusercontent.com/AustinBoydston/HCI-Project-repo01/master/data.json');
+questions.responseType = 'json';
+questions.send();
+
+questions.onload() = function(){
+    var jsonQuestions = questions.response;
+};
+
+//testing to see if it loads proper value
+var test = jsonQuestions[0].id;
+document.getElementById("test").innerHTML = test;
+
 
 
 
