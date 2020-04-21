@@ -117,10 +117,10 @@ function start(){
 
     ctx.fillText("Title", 250, 50);
     ques.fillText("Question", 150, 100);
-    b1.fillText = ("A", 100, 150);
-    b2.fillText = ("B", 100, 175);
-    b3.fillText = ("C", 100, 200);
-    b4.fillText = ("D", 100, 225);
+    b1.fillText("A", 100, 150);
+    b2.fillText("B", 100, 175);
+    b3.fillText("C", 100, 200);
+    b4.fillText("D", 100, 225);
 };
 
 
