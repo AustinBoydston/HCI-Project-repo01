@@ -88,7 +88,7 @@ questions.onload() = function(){
 };
 
 //testing to see if it loads proper value
-var test = jsonQuestions[0].id;
+var test = 100;
 document.getElementById("test").innerHTML = test;
 
 
