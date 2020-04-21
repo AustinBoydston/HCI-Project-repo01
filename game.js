@@ -86,15 +86,15 @@ function start(){
     // window.alert("this ran");
     // };
 
-    var jsonSource = new XMLHttpRequest();
-    jsonSource.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var questions = JSON.parse(this.responseText);
-            document.getElementById("test").innerHTML = questions[0].quesiton;
-        }
-    };
-    jsonSource.open("GET", "data.json", true);
-    jsonSource.send();
+//     var jsonSource = new XMLHttpRequest();
+//     jsonSource.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             var questions = JSON.parse(this.responseText);
+//             document.getElementById("test").innerHTML = questions[0].quesiton;
+//         }
+//     };
+//     jsonSource.open("GET", "data.json", true);
+//     jsonSource.send();
 
     var test1 = "changed";
     document.getElementById("test2").innerHTML = test1;
@@ -118,9 +118,9 @@ function start(){
     ctx.fillText("Title", 250, 50);
     ques.fillText("Question", 150, 100);
     b1.fillText = ("A", 100, 150);
-    b2.fillText = ("B", 300, 150);
+    b2.fillText = ("B", 100, 175);
     b3.fillText = ("C", 100, 200);
-    b4.fillText = ("D", 300, 200);
+    b4.fillText = ("D", 100, 225);
 };
 
 
