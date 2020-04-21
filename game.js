@@ -37,6 +37,12 @@ var A1 = document.getElementById("Answer1")
 var A2 = document.getElementById("Answer2")
 var A3 = document.getElementById("Answer3")
 var A4 = document.getElementById("Answer4")
+//the question text area in the html
+var question = document.getElementById("question");
+//set the defualt text in the question text field
+document.getElementById("question").nodeValue = "The widget containing the question";
+
+
 //event listeners for the buttons
 A1.addEventListener('click', functoin());
 A2.addEventListener('click', functoin());
