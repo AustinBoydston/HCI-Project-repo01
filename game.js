@@ -41,7 +41,7 @@ A3.addEventListener('click', null);
 A4.addEventListener('click', null);
 
 var strt = document.getElementById("start");
-strt.addEventListener('click', start());
+//strt.addEventListener('click', start());
 
 //Classes
 var display = new function(){
