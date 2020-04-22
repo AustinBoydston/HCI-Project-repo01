@@ -39,8 +39,9 @@ A1.addEventListener('click', functoin());
 A2.addEventListener('click', functoin());
 A3.addEventListener('click', functoin());
 A4.addEventListener('click', functoin());
-//
 
+var strt = document.getElementById("start");
+strt.addEventListener('click', start());
 
 //Classes
 var display = new function(){
