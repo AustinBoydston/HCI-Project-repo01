@@ -87,15 +87,15 @@ function start(){
     // window.alert("this ran");
     // };
 
-//     var jsonSource = new XMLHttpRequest();
-//     jsonSource.onreadystatechange = function() {
-//         if (this.readyState == 4 && this.status == 200) {
-//             var questions = JSON.parse(this.responseText);
-//             document.getElementById("test").innerHTML = questions[0].quesiton;
-//         }
-//     };
-//     jsonSource.open("GET", "data.json", true);
-//     jsonSource.send();
+    var jsonSource = new XMLHttpRequest();
+    jsonSource.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var questions = JSON.parse(this.responseText);
+            document.getElementById("test").innerHTML = questions[0].quesiton;
+        }
+    };
+    jsonSource.open("GET", "data.json", true);
+    jsonSource.send();
 
     var test1 = "changed";
     document.getElementById("test2").innerHTML = test1;
