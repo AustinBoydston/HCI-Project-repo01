@@ -35,12 +35,10 @@ var A2 = document.getElementById("Answer2");
 var A3 = document.getElementById("Answer3");
 var A4 = document.getElementById("Answer4");
 //event listeners for the buttons
-/*
-A1.addEventListener('click', null);
-A2.addEventListener('click', null);
-A3.addEventListener('click', null);
-A4.addEventListener('click', null);
-*/
+// A1.addEventListener('click', null);
+// A2.addEventListener('click', null);
+// A3.addEventListener('click', null);
+// A4.addEventListener('click', null);
 
 var strt = document.getElementById("start");
 //strt.addEventListener('click', start());
@@ -77,30 +75,28 @@ var controller = new function(){
 
 };
 
-function start(){
 
-    // var questions = new XMLHttpRequest();
-    // questions.open('GET', "/data.json");
-    // questions.responseType = "json";
-    // questions.send();
-
-    // questions.onload() = function(){
-    // var jsonQuestions = questions.response;
-    // window.alert("this ran");
-    // };
-
-    var jsonSource = new XMLHttpRequest();
+//this code reads in data from the json file and stores it into global array named questions
+var questions;
+var jsonSource = new XMLHttpRequest();
     jsonSource.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var questions = JSON.parse(this.responseText);
-            document.getElementById("test").innerHTML = questions[0].quesiton;
+            questions = JSON.parse(this.responseText);
         }
     };
-    jsonSource.open("GET", "data.json", true);
-    jsonSource.send();
+jsonSource.open("GET", "data.json", true);
+jsonSource.send();
 
+
+function start(){
+    
+    //This was used for debugging 
     var test1 = "changed";
     document.getElementById("test2").innerHTML = test1;
+    //example of how to access data from array 
+    document.getElementById("test").innerHTML = questions[0].quesiton;
+
+    //the code below was created to make the canvas change dynamically as the user selected the start game option 
 
     //The canvas we have set up in the html file is called ctx
     // this ctx variable is linked to it
@@ -118,12 +114,36 @@ function start(){
     b3.font = '20px Arial';
     b4.font = '20px Arial';
 
-    ctx.fillText("Title", 250, 50);
-    ques.fillText("Question", 150, 100);
-    b1.fillText("A", 100, 150);
-    b2.fillText("B", 100, 175);
-    b3.fillText("C", 100, 200);
-    b4.fillText("D", 100, 225);
+    ctx.fillText("Welcome to Weather Quest", 200, 50);
+    ques.fillText("Questions are placed here", 50, 100);
+    b1.fillText("Answer A", 50, 150);
+    b2.fillText("Answer B", 50, 200);
+    b3.fillText("Answer C", 50, 250); 
+    b4.fillText("Answer D", 50, 300);
+
+    //adds button after start game is clicked and then removes it after it is pressed 
+    //allows user to progress to the next page after the start page 
+    var btn = document.createElement("BUTTON");
+    btn.innerHTML = "Continue";
+    document.getElementById("continue").appendChild(btn);
+    btn.addEventListener("click", function(){
+        console.log("The shit was pressed already");
+        //removes continue button
+        btn.remove();
+        game();
+    });
+    
+
+};
+
+var questionCounter = 0;
+//all this code could also go in game logic, wasnt sure how to use the function as currently defined 
+function game(){
+
+    //this was intended to allow the canvas to iterate questions, but gets the error that ques is not defined 
+    ques.fillText(questions[questionCounter].quesiton, 50, 100);
+    questionCounter++;
+
 };
 
 
