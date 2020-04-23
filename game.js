@@ -127,7 +127,6 @@ function start(){
     btn.innerHTML = "Continue";
     document.getElementById("continue").appendChild(btn);
     btn.addEventListener("click", function(){
-        console.log("The shit was pressed already");
         //removes continue button
         btn.remove();
         game();
