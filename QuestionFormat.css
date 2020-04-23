@@ -67,9 +67,31 @@ widgetHolder{
 
 #container
 {
- width: 968px;
+ width: 1080px;
  margin: 0px auto;   
 }
 
-
-
+#Answer1
+{
+    position: relative;
+    bottom: 390px;
+    left: 25px;
+}
+#Answer2
+{
+    position: relative;
+    bottom: 366px;
+    left: -50px;
+}
+#Answer3
+{
+    position: relative;
+    bottom: 342px;
+    left: -125px;
+}
+#Answer4
+{
+    position: relative;
+    bottom: 315px;
+    left: -200px;
+}
