@@ -13,7 +13,7 @@ body {
 }
 
 /* Doing the header for Weather Quest*/
-header {
+#header {
 
     background-color: #00BFFF;
     color: #FFFFFF;
@@ -26,7 +26,7 @@ header {
 }
 
 /* Doing menu on the left */
-navMenu {
+#navMenu {
 
     float: left;
     width: 35%;
@@ -39,7 +39,7 @@ navMenu {
 
 /* Doing the summary on the right */
 
-navSummary{
+#navSummary{
 
     float: left;
     width: 65%;
@@ -53,7 +53,7 @@ navSummary{
 
 
 /* Doing the main section*/
-widgetHolder{
+#widgetHolder{
 
     
     height: 60%;
