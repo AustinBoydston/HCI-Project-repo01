@@ -219,47 +219,104 @@ var correctAnswer = [
 "D"
 ];
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////
+//                                    Global Varibles
+            var Global_Game_Counter = 0;
+            var score = 0;
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 //Answer buttons from index.html linked to new javascript variables
-var A1 = document.getElementById("Answer1");
-var A2 = document.getElementById("Answer2");
-var A3 = document.getElementById("Answer3");
-var A4 = document.getElementById("Answer4");
+var A1 = document.getElementById("AnswerA");
+var A2 = document.getElementById("AnswerB");
+var A3 = document.getElementById("AnswerC");
+var A4 = document.getElementById("AnswerD");
 //event listeners for the buttons
-A1.addEventListener('click', functoin());
-A2.addEventListener('click', functoin());
-A3.addEventListener('click', functoin());
-A4.addEventListener('click', functoin());
+//A1.addEventListener('click', functoin());
+//A2.addEventListener('click', functoin());
+//A3.addEventListener('click', functoin());
+//A4.addEventListener('click', functoin());
 //
 
 
-//Classes
-var display = new function(){
 
-    //update the canvas
 
-};
 
-var gameLogic = new function(){
+
+
+
+function gameLogic(caller){
 //reference json file here and cycle quesitons as well as tally the score
-
+//only the answer buttons are linked to this funciton
+//which means it starts at question 2 technically
+Global_Game_Counter++;
+var id = caller.id;
 //the score of the game
-var score = 0;
-//an array that keeps track of what questions have already been visited
-var visited = new Array(30);
-//initialize all indexes to 0 since no questions have been visited at this time
-for(var i = 0; i < 30; i++)
+
+//the variable holding the correct answer
+var check;
+console.log(Global_Game_Counter);
+if(Global_Game_Counter > 29)
 {
-    visited[i] = 0;
+alert("your score was: " + score);
+    score = 0;
+restart();
 }
+else{
+     check = questions[Global_Game_Counter].correctanswer;
+console.log(check);
+if(id == "Answer1" && check == "A")
+{
+console.log("Correct");
+score = score + 50;
+}
+else if(id == "Answer2" && check == "B")
+{
+console.log("Correct");
+score = score + 50;
+}
+else if(id == "Answer3" && check == "C")
+{
+    score = score + 50;
+    console.log("Correct");
+}
+else if(id == "Answer4" && check == "D")
+{
+    score = score + 50;
+    console.log("Correct");
+}
+else{
+    console.log("Incorrect")
+}
+}
+
+//update question and anwswers to the next one.
+document.getElementById("test").innerHTML = questions[Global_Game_Counter].quesiton;
+document.getElementById("An1").innerHTML = questions[Global_Game_Counter].answer1;
+document.getElementById("An2").innerHTML = questions[Global_Game_Counter].answer2;
+document.getElementById("An3").innerHTML = questions[Global_Game_Counter].answer3;
+document.getElementById("An4").innerHTML = questions[Global_Game_Counter].answer4;
+
+
+
+
+//an array that keeps track of what questions have already been visited
+//var visited = new Array(30);
+//initialize all indexes to 0 since no questions have been visited at this time
+
 //implement randomizing funciton that will call up a random question
 
 //for not just iterate sequencially
 
 
 };
+ function restart(){
+    //reset all the variables to their start values
+    //hide all buttons except for start button.
+Global_Game_Counter = 0;
 
+
+};    
 var controller = new function(){
 
 //handles actions by user
@@ -283,7 +340,11 @@ function start(){
     var test1 = "changed";
     document.getElementById("test2").innerHTML = test1;
     //example of how to access data from array 
-    document.getElementById("test").innerHTML = questions[0].quesiton;
+document.getElementById("test").innerHTML = questions[0].quesiton;
+document.getElementById("An1").innerHTML = questions[0].answer1;
+document.getElementById("An2").innerHTML = questions[0].answer2;
+document.getElementById("An3").innerHTML = questions[0].answer3;
+document.getElementById("An4").innerHTML = questions[0].answer4;
 
     //the code below was created to make the canvas change dynamically as the user selected the start game option 
 
