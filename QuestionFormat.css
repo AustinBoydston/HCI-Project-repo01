@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Weather Quest</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
+* {
+	box-sizing: border-box;
+}
 
 body {
 
+background-color: #FFFFFF;
  font-family: Arial, Helvetica, sans-serif;
 
 }
 
 /* Doing the header for Weather Quest*/
-#header {
+header {
 
     background-color: #00BFFF;
     color: #FFFFFF;
@@ -26,7 +24,7 @@ body {
 }
 
 /* Doing menu on the left */
-#navMenu {
+navMenu {
 
     float: left;
     width: 35%;
@@ -39,7 +37,7 @@ body {
 
 /* Doing the summary on the right */
 
-#navSummary{
+navSummary{
 
     float: left;
     width: 65%;
@@ -51,6 +49,11 @@ body {
 
 }
 
+section:after {
+	content:"";
+	display: table;
+	clear: both;
+}
 
 /* Doing the main section*/
 #widgetHolder{
