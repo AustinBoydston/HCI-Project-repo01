@@ -6,72 +6,123 @@
 <title>title</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" media="screen" href="QuestionFormat.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="homeFormat.css" />
 </head>
 
-<body>
-	<!--Wrapped everything within a master div for a static layout-->
-<div id = "container">
+	<header>
+		<div style="text-align: center; font-size: 20px;">
+			Weather Quest
+		</div>
+	</header>
 
-	<div style="text-align: center; font-size: 20px;">
-		Weather Quest
-	</div>
-
-
-
-
-    <!--/* Need links added for home and game. Everything else should be dead links*/-->
-    <div style="text-align: center; font-size: 16px;">
-		Home
-	</div>
-
-	<div style="text-align: center; font-size: 16px;">
-		Weather
-	</div>
-
-	<div style="text-align: center; font-size: 16px;">
-		Game
-	</div>
-
-	<!--/* Need a line here*/-->
-
-	<div style="text-align: center; font-size: 16px;">
-		Settings
-	</div>
-
-	<div style="text-align: center; font-size: 16px;">
-		Feedback
-	</div>
-
-	<!--Load questions from json file-->
-
-	<p id="test">default</p>
-	<p id="test2">default8</p>
-
-	<script type="text/javascript" src="game.js"> </script>
-	<button id="start" type="button" onclick="start()">Start Game</button>
-
-
-	<div style="text-align: center; font-size: 16px;">
-		Summary: Needs TextArea
-	</div>
-
-
-	<!--/* Need summary widget, i.e. TextArea */-->
 	
+	<section>
 
-
-	<!--/*Widget goes in here */-->
-	<!--The below section was added by Austin pleaes do not make drastic changes and document areas you've edited, ty-->
-	<!--Created a canvas to do some work on, feel free to move it where ever you need it-->
-	<canvas id="ctx" width="500" height="500" style="border:1px solid #000000;">
-
-		<!--This references the js script, we may or may not write literal sciprt blocks or just use the reference to a single file like what is below
-		    for now any literal script segments that are not in a js file go ahead an copy those into game.js even if they remain commented out in there-->
 		
+		<navMenu>
+			    <!--/* Need links added for home and game. Everything else should be dead links*/-->
+				<div style="text-align: center; font-size: 16px;">
+					<a href= "index.html">Home</a>
 
-	</canvas>
+				</div>
+			
+				<div style="text-align: center; font-size: 16px;">
+					Weather
+				</div>
+			
+				<div style="text-align: center; font-size: 16px;">
+					<a href= "gameIndex.html">Game</a>
+				</div>
+			
+				<!--/* Need a line here*/-->
+			
+				<div style="text-align: center; font-size: 16px;">
+					Settings
+				</div>
+			
+				<div style="text-align: center; font-size: 16px;">
+					Feedback
+				</div>
+		</navMenu>
 
+		<navSummary>
+			<div style="text-align: center; font-size: 18px;">
+				<p>
+				Welcome to the Weather Quest website. We offer the current weather for your location, weather around the world, and a meteorology trivia game to test your knowledge against.
+				</p>
+			</div>
+
+		</navSummary>
+	</section>
+
+	<section>
+
+		<weatherCore>
+
+			<div style="text-align: right; font-size: 40px;">
+				<img src="ICON1.png" style="float:left;width:40px;height:40px;"> Los Angeles
+
+			</div>
+
+
+			<div>
+			
+			<img src="LA_View.jpg" style="width:450px;height:300px;">
+			</div>
+
+			<div style="text-align: right; font-size: 28px;">
+				<p>
+				<img src="ICON2.png" style="float:left;width:100px;height:100px;">	Now:     50 degrees<br>
+				Tonight: 42 degrees<br>
+				Wind:    W 7 mph<br>	
+				</p>
+			</div>
+
+			<div style="text-align: right; font-size: 20px;">
+				<p>
+				<b>Tomorrow</b>    <br>
+				Day: 52 degrees<br>
+				Night: 44 degrees
+				</p>
+
+			</div>
+
+		</weatherCore>
+
+		<weatherExtra>
+			<div style="text-align: center; font-size: 30px;">
+				Additional Weather Information
+			</div>
+			<div style="text-align: left; font-size: 24px;">
+				<p>
+				Humidity: 75% 
+				</p>
+
+				<p>
+					Chance of Rain: 25% <img src="rainIcon.png" style="float:right;width:25px;height:25px;">
+				</p>
+
+				<p>
+					UV Index: 8 <img src="UV.png" style="float:right;width:25px;height:25px;">
+				</p>
+
+				<p>
+					Air Quality Index: 23
+				</p>
+
+				<p>
+					Air Quality: Good <img src="thumbsup.png" style="float:right;width:25px;height:25px;">
+				</p>
+
+			</div>
+
+
+		</weatherExtra>
+
+	</section>
+
+
+<<<<<<< HEAD
 	<div id="continue">
 		filler
 	</div> 
@@ -80,10 +131,11 @@
 	<button id="Answer2" type = "button" onclick="gameLogic()">Answer 2</button>
 	<button id="Answer3" type = "button" onclick="gameLogic()">Answer 3</button>
 	<button id="Answer4" type = "button" onclick="gameLogic()">Answer 4</button>
+=======
+>>>>>>> origin/styleTest
 
+<body>
 
-	<!--outside div-->
-</div>
 </body>
 
 </html>

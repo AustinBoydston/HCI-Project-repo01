@@ -1,12 +1,17 @@
 
-#body {
+* {
+	box-sizing: border-box;
+}
 
+body {
+
+background-color: #FFFFFF;
  font-family: Arial, Helvetica, sans-serif;
 
 }
 
 /* Doing the header for Weather Quest*/
-#header {
+header {
 
     background-color: #00BFFF;
     color: #FFFFFF;
@@ -18,12 +23,18 @@
 
 }
 
-/* Doing menu on the left */
-#navMenu {
 
+/* Doing menu on the left */
+
+navMenu {
+
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #00BFFF;
+    border-width: medium;
     float: left;
     width: 35%;
-    height: 30%;
+    height: 125px;
     padding: 15px;
     background-color: #FFFFFF;
     color: #000000;
@@ -32,11 +43,16 @@
 
 /* Doing the summary on the right */
 
-#navSummary{
 
+navSummary{
+
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #00BFFF;
+    border-width: medium;
     float: left;
     width: 65%;
-    height: 30%;
+    height: 125px;
     background: /* Pick a color */;
     padding: 15px;
     background-color: #FFFFFF;
@@ -44,47 +60,62 @@
 
 }
 
-
-/* Doing the main section*/
-#widgetHolder{
-
-    
-    height: 60%;
-    background: /* Pick a color */;
-    padding: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-
+section:after {
+	content:"";
+	display: table;
+	clear: both;
 }
-
 
 #container
 {
- width: 1080px;
- margin: 0px auto;   
+
+ background-image: url("CloudMove.gif");
+ width: 1070px;
+ margin: 0px auto;
+    
 }
 
 #Answer1
 {
     position: relative;
     bottom: 390px;
-    left: 25px;
+    left: 50px;
 }
 #Answer2
 {
     position: relative;
     bottom: 366px;
-    left: -50px;
+    left: 50px;
 }
 #Answer3
 {
     position: relative;
     bottom: 342px;
-    left: -125px;
+    left: 50px;
 }
 #Answer4
 {
     position: relative;
     bottom: 315px;
-    left: -200px;
+    left: 50px;
+}
+
+.largeButton{
+    display: block;
+    width: 20%;
+    border: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.largeButton:hover {
+
+    background-color: cyan;
+    color: black;
+    
 }
