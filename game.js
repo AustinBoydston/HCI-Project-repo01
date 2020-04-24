@@ -342,8 +342,8 @@ jsonSource.send();
 function start(){
     
     //This was used for debugging 
-    var test1 = "changed";
-  //  document.getElementById("test2").innerHTML = test1;
+   
+ 
     //example of how to access data from array 
 document.getElementById("questionBlock").innerHTML = questions[0].quesiton;
 document.getElementById("An1").innerHTML = questions[0].answer1;
