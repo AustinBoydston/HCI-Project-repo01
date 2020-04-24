@@ -261,6 +261,11 @@ if(Global_Game_Counter > 29)
 alert("your score was: " + score);
     score = 0;
 restart();
+
+
+
+
+
 }
 else{
      check = questions[Global_Game_Counter].correctanswer;
@@ -291,7 +296,7 @@ else{
 }
 
 //update question and anwswers to the next one.
-document.getElementById("test").innerHTML = questions[Global_Game_Counter].quesiton;
+document.getElementById("questionBlock").innerHTML = questions[Global_Game_Counter].quesiton;
 document.getElementById("An1").innerHTML = questions[Global_Game_Counter].answer1;
 document.getElementById("An2").innerHTML = questions[Global_Game_Counter].answer2;
 document.getElementById("An3").innerHTML = questions[Global_Game_Counter].answer3;
