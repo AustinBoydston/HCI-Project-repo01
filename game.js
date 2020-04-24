@@ -343,9 +343,9 @@ function start(){
     
     //This was used for debugging 
     var test1 = "changed";
-    document.getElementById("test2").innerHTML = test1;
+  //  document.getElementById("test2").innerHTML = test1;
     //example of how to access data from array 
-document.getElementById("test").innerHTML = questions[0].quesiton;
+document.getElementById("questionBlock").innerHTML = questions[0].quesiton;
 document.getElementById("An1").innerHTML = questions[0].answer1;
 document.getElementById("An2").innerHTML = questions[0].answer2;
 document.getElementById("An3").innerHTML = questions[0].answer3;
@@ -370,23 +370,23 @@ document.getElementById("An4").innerHTML = questions[0].answer4;
     b4.font = '20px Arial';
 
     ctx.fillText("Welcome to Weather Quest", 200, 50);
-    ques.fillText("Questions are placed here", 50, 100);
-    b1.fillText("Answer A", 50, 150);
-    b2.fillText("Answer B", 50, 200);
-    b3.fillText("Answer C", 50, 250); 
-    b4.fillText("Answer D", 50, 300);
+   // ques.fillText("Questions are placed here", 50, 100);
+   // b1.fillText("Answer A", 50, 150);
+   // b2.fillText("Answer B", 50, 200);
+   // b3.fillText("Answer C", 50, 250); 
+   // b4.fillText("Answer D", 50, 300);
 
     //adds button after start game is clicked and then removes it after it is pressed 
     //allows user to progress to the next page after the start page 
-    var btn = document.createElement("BUTTON");
-    btn.innerHTML = "Continue";
-    document.getElementById("continue").appendChild(btn);
-    btn.addEventListener("click", function(){
-        console.log("The shit was pressed already");
+    //var btn = document.createElement("BUTTON");
+    //btn.innerHTML = "Continue";
+   // document.getElementById("continue").appendChild(btn);
+   // btn.addEventListener("click", function(){
+//console.log("The shit was pressed already");
         //removes continue button
-        btn.remove();
-        game();
-    });
+       // btn.remove();
+        //game();
+   // });
     
 
 };
