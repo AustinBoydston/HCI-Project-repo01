@@ -78,25 +78,25 @@ section:after {
 #Answer1
 {
     position: relative;
-    bottom: 390px;
+    bottom: 790px;
     left: 50px;
 }
 #Answer2
 {
     position: relative;
-    bottom: 366px;
+    bottom: 766px;
     left: 50px;
 }
 #Answer3
 {
     position: relative;
-    bottom: 342px;
+    bottom: 742px;
     left: 50px;
 }
 #Answer4
 {
     position: relative;
-    bottom: 315px;
+    bottom: 715px;
     left: 50px;
 }
 
@@ -124,7 +124,7 @@ section:after {
     position: relative;
     display: block;
     padding: 10px;
-    bottom: 170px;
+    bottom: 470px;
     left: 270px;
 
 }
